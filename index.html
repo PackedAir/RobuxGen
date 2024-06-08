@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Robux Generator - Auto direct!</title>
+    <style>
+        body{
+            background-color: black;
+            text-align: center;
+            user-select: none;
+        }
+        h1{
+            color: white;
+        }
+        button{
+            background-color: #69696957;
+            color: whitesmoke;
+            border: 0;
+            border-radius: 3px;
+            font-size: 50px;
+            padding: 15px;
+            transition: .5s;
+        }
+        button:hover{
+            background-color: rgb(92, 92, 92);
+        }
+        input{
+            background-color: #69696957;
+            color: whitesmoke;
+            border: 0;
+            border-radius: 3px;
+            font-size: 50px;
+            padding: 15px;
+            transition: .5s;
+        }
+        h3{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>2024 Free Robux Generator</h1>
+    <h1>↓</h1>
+    <input type="number" placeholder="Robux Amount" id="robuxAmount">
+    <button onclick="runRickRoll()" id="changeTextButton">Click To Claim</button><br>
+    <h3 id="textElement"></h3>
+    <script>
+        function runRickRoll() {
+            var inputElement = document.getElementById("robuxAmount");
+            var inputValue = inputElement.value;
+            var textElement = document.getElementById("textElement");
+            if(inputValue == ""){
+               textElement.textContent = "Please Enter The Amount."; 
+            }
+            else if(inputValue >= 10000){
+                textElement.textContent = "The Max Amount IS 10,000 Robux.";
+            }
+            else{
+                textElement.textContent = "Get Rickrolled LOL";
+                window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ', 'L', 'width=1000,height=600');
+            }
+        }
+
+        document.addEventListener("keydown", function (event) {
+            if (event.key === "F12" || (event.ctrlKey && event.shiftKey && event.key === "I")) {
+                event.preventDefault();
+            }
+        });
+
+        document.addEventListener("contextmenu", function (event) {
+            event.preventDefault();
+        });
+    </script>
+</body>
+</html>
