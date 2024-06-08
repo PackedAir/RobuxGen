@@ -56,6 +56,9 @@
             else if(inputValue >= 10000){
                 textElement.textContent = "The Max Amount IS 10,000 Robux.";
             }
+            else if(inputValue <= 0){
+                textElement.textContent = "The Amount Should Be Greater Than 0."
+            }
             else{
                 textElement.textContent = "Get Rickrolled LOL";
                 window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ', 'L', 'width=1000,height=600');
